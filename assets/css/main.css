@@ -13,6 +13,11 @@ summary, time, mark, audio, video {
     vertical-align: baseline;
 }*/
 
+body {
+    background-color: blanchedalmond;
+    color: brown;
+}
+
 .container {
     margin: 0 auto;
     max-width: calc(100% - 50px);
