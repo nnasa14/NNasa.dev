@@ -15,7 +15,7 @@ summary, time, mark, audio, video {
 
 .container {
     margin: 0 auto;
-    max-width: calc(100% - 50);
+    max-width: calc(100% - 50px);
     width: 1200px;
 }
 
@@ -31,18 +31,34 @@ ul {
 /* Nav */
 #nav {
     background-color: gray;
-    position: fixed;
+    position: absolute;
     display: block;
     width: 50%;
     text-align: center;
-    top: 20px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: inset 0px 0px 1px 1px rgb(54, 54, 54);
+    z-index: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 #nav li{
     display: inline-block;
     padding: 0 1.5em 0 1.5em;
+    white-space: nowrap;
+    vertical-align: baseline;
 }
 
+#home {
+    margin: auto;
+    text-align: left;
+    display: flexbox;
+}
+
+.wrapper {
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
+    inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
