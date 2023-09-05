@@ -6,7 +6,12 @@ p, a, ul, li, form, label, article, footer, header, nav {
 
 html {
     box-sizing: border-box;
-    display: block;
+    display: inline-block;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    margin: 0;
 }
 
 ul {
@@ -16,6 +21,16 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+}
+
+article {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: auto;
 }
 
 /* NAV / HOME */
@@ -93,19 +108,30 @@ ul {
     inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1280p){
+    .wrapper {
+        padding: 5em 0 5em 0;
+        text-align: center;
+    }
+}
+
 .wrapper.style1 {
     background-image: none;
     background-color: blanchedalmond;
+    text-shadow: -1px -1px 0px #434343;
+    color: gray
 }
 
 .wrapper.style2 {
     background-color: antiquewhite;
     text-shadow: 1px 1px 0px #434343;
+    color: gray
 }
 
 .wrapper.style3 {
     background-color: blanchedalmond;
     text-shadow: 1px 1px 0px #434343;
+    color: gray
 }
 
 .wrapper.style4 {
@@ -118,4 +144,22 @@ ul {
     margin: 0 auto;
     max-width: calc(100% - 50px);
     width: 1200px;
+}
+
+/* COLS */
+
+@media screen and (max-width: 980px) {
+.row > .col-12-medium {
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px){
+.row > .col-7-large {
+    width: 58.33333%;
+    }
+}
+
+.row > .col-8 {
+    width: 66.66667%;
 }
