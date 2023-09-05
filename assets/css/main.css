@@ -1,27 +1,12 @@
-/* MAIN
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
-small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
-form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
-details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, 
-summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
+/* MAIN */
+html, body, div, span, h1, h2, h3, h4, h5, h6, 
+p, a, ul, li, form, label, article, footer, header, nav {
     vertical-align: baseline;
-}*/
+}
 
 html {
     box-sizing: border-box;
     display: block;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: calc(100% - 50px);
-    width: 1200px;
 }
 
 ul {
@@ -33,7 +18,7 @@ ul {
     padding-inline-start: 40px;
 }
 
-/* Nav */
+/* NAV / HOME */
 #nav {
     background-color: rgb(233, 177, 138);
     position: absolute;
@@ -58,17 +43,35 @@ ul {
 
 #home {
     margin: auto;
-    text-align: left;
+    text-align: center;
     display: flexbox;
     padding: 4em 0;
+}
+
+/* IMAGE */
+#home .image img {
+    border-radius: 100%;
 }
 
 .image {
     position: relative;
 }
 
+.image img {
+    display: block;
+    width: 100%;
+}
+
 .image.fit {
     display: block;
+}
+
+.div {
+    display: block;
+}
+
+.row > .col-4 {
+    width: 33%;
 }
 
 #home .image {
@@ -77,6 +80,14 @@ ul {
     height: 150;
 }
 
+#profile {
+    width: 200px;
+    height: 200px;
+    display: inline;
+    position: relative;
+}
+
+/* WRAPPERS / CONTAINERS */
 .wrapper {
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
     inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
@@ -101,4 +112,10 @@ ul {
     background-color: antiquewhite;
     color: gray;
     text-shadow: -1px -1px 0px #434343;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: calc(100% - 50px);
+    width: 1200px;
 }
