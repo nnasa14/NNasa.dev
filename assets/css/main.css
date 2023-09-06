@@ -123,6 +123,7 @@ a {
     text-transform: uppercase;
     cursor: default;
     font-family: 'Lucida Console', Courier, monospace;
+    line-height: 2.5em;
 }
 
 #nav li{
@@ -145,7 +146,7 @@ a {
     margin: auto;
     margin-bottom: 0;
     text-align: center;
-    padding: 3em 4em;
+    padding: 5em 4em;
 }
 
 #home p {
@@ -214,6 +215,35 @@ a {
     position: relative;
 }
 
+/* SKILLS */
+
+#skills h2{
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#skills header p{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(176, 153, 137);
+}
+
+#skills h3 {
+    text-align: left;
+    margin: auto -10em;
+}
+
+#skills p{
+    margin-top: 5px;
+    text-align: left;
+    margin: auto -10em;
+    color: rgb(176, 153, 137);
+}
+
+#skills .skilllist{
+    margin-bottom: 3rem;
+}
+
 /* WRAPPERS / CONTAINERS */
 .wrapper {
     box-shadow: 0px -3px 5px #dddcdc;
@@ -234,7 +264,7 @@ a {
 }
 
 .wrapper.style2 {
-    background-color: rgb(246, 242, 237);
+    background-color: rgb(248, 245, 242);
     margin: auto;
     padding: 3em 0;
 }
