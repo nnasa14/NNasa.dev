@@ -12,15 +12,27 @@ html {
 body {
     -webkit-text-size-adjust: none;
     margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 ul {
-    display: block;
+    display: flex;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul li {
+    padding-left: 0.5em;
 }
 
 article {
@@ -28,9 +40,68 @@ article {
     margin-bottom: 0;
 }
 
+li {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+}
+
+li:before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: rgb(222, 142, 85);
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: rgb(222, 142, 85);
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+li:hover:before,
+li:hover:after,
+li:hover a:before{
+    width: 100%;
+}
+
+a {
+    color: rgb(230, 113, 142);
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+a:before {
+    position:absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: rgb(222, 142, 85);
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
     margin: auto;
+}
+
+#contact {
+    font-weight: 600;
+    font-size: larger;
+    text-transform: uppercase;
 }
 
 /* NAV / HOME */
@@ -43,10 +114,11 @@ article {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000;
+    z-index: 1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
+    cursor: default;
 }
 
 #nav li{
@@ -54,6 +126,12 @@ article {
     padding: 0 1.5em 0 1.5em;
     white-space: nowrap;
     vertical-align: baseline;
+    position: relative;
+    font: inherit;
+}
+
+#nav a {
+    color: white;
 }
 
 #home {
