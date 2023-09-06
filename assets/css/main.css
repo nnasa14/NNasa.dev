@@ -15,6 +15,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
+    font-family: "Courier New", sans-serif;
 }
 
 ul {
@@ -46,52 +47,12 @@ li {
     display: flex;
 }
 
-li:before {
-    content: "";
-    position: absolute;
-    height: 33.33%;
-    width: 0;
-    background-color: rgb(222, 142, 85);
-    right: 0;
-    z-index: 0;
-    top: 33.33%;
-    transition: all 0.5s;
-}
-
-li:after {
-    content: "";
-    position: absolute;
-    height: 33.33%;
-    width: 0;
-    background-color: rgb(222, 142, 85);
-    left: 0;
-    z-index: 0;
-    bottom: 0;
-    transition: all 0.5s;
-}
-
-li:hover:before,
-li:hover:after,
-li:hover a:before{
-    width: 100%;
-}
-
 a {
     color: rgb(230, 113, 142);
     text-decoration: none;
     padding: 10px 5px;
 }
 
-a:before {
-    position:absolute;
-    content: "";
-    height: 33.33%;
-    width: 0;
-    background-color: rgb(222, 142, 85);
-    bottom: 66.66%;
-    left: 0;
-    transition: all 0.5s;
-}
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -105,8 +66,51 @@ a:before {
 }
 
 /* NAV / HOME */
+
+#nav li:before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: rgb(192, 153, 125);
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+}
+
+#nav li:after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: rgb(192, 153, 125);
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+#nav li:hover:before,
+#nav li:hover:after,
+#nav li:hover a:before{
+    width: 100%;
+    z-index: -1;
+}
+
+#nav a:before {
+    position:absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: rgb(192, 153, 125);
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
 #nav {
-    background-color: rgb(233, 177, 138);
     position: absolute;
     display: block;
     width: 50%;
@@ -114,9 +118,8 @@ a:before {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    z-index: 1000;
+    font-weight: 600;
     text-transform: uppercase;
     cursor: default;
 }
@@ -127,17 +130,17 @@ a:before {
     white-space: nowrap;
     vertical-align: baseline;
     position: relative;
-    font: inherit;
+    font-family: "Courier New", sans-serif;
+    font-size: larger;
 }
 
 #nav a {
-    color: white;
+    color: rgb(62, 38, 22);
 }
 
 #home {
     margin: auto;
     text-align: center;
-    display: flexbox;
     padding: 4em 0;
 }
 
@@ -195,25 +198,25 @@ a:before {
 
 .wrapper.style1 {
     background-image: none;
-    background-color: blanchedalmond;
+    background-color: rgb(251, 245, 238);
     text-shadow: -1px -1px 0px #434343;
     color: gray
 }
 
 .wrapper.style2 {
-    background-color: antiquewhite;
+    background-color: rgb(253, 242, 224);
     text-shadow: 1px 1px 0px #434343;
     color: gray
 }
 
 .wrapper.style3 {
-    background-color: blanchedalmond;
+    background-color: rgb(251, 245, 238);
     text-shadow: 1px 1px 0px #434343;
     color: gray
 }
 
 .wrapper.style4 {
-    background-color: antiquewhite;
+    background-color: rgb(253, 242, 224);
     color: gray;
     text-shadow: -1px -1px 0px #434343;
 }
