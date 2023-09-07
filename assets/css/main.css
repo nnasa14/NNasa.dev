@@ -4,15 +4,8 @@ p, a, ul, li, form, label, article, footer, header, nav {
     vertical-align: baseline;
 }
 
-html {
-    box-sizing: border-box;
-    display: inline-block;
-}
-
 body {
     -webkit-text-size-adjust: none;
-    margin: 0;
-    padding: 0;
     height: 100vh;
     width: 100vw;
     font-family: "Verdana", sans-serif;
@@ -38,7 +31,7 @@ h1:after {
     margin: 1em 0 0.001px 0;
 }
 
-h1:before {
+h1::before {
     content: '';
     display: block;
     border-top: solid 2px;
@@ -82,12 +75,12 @@ a {
 }
 
 
-*, *:before, *:after {
+*, *::before, *::after {
     margin: auto;
 }
 
 /* NAV */
-#nav li:before {
+#nav li::before {
     content: "";
     position: absolute;
     height: 33.33%;
@@ -111,14 +104,14 @@ a {
     transition: all 0.5s;
 }
 
-#nav li:hover:before,
+#nav li:hover::before,
 #nav li:hover:after,
 #nav li:hover a:before{
     width: 100%;
     z-index: -1;
 }
 
-#nav a:before {
+#nav a::before {
     position: absolute;
     content: "";
     height: 33.33%;
@@ -164,6 +157,10 @@ nav #homenav {
     text-shadow: 3px 2px 2px rgb(170, 131, 103);
 }
 
+#nav .container {
+    margin: 0 auto;
+}
+
 /* HOME */
 #home {
     margin: auto;
@@ -182,7 +179,7 @@ nav #homenav {
     height: 100%;
     background: url(../images/paper-1074131.JPG) no-repeat;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: 0;
   }
 
@@ -218,7 +215,7 @@ nav #homenav {
 }
 
 .button:hover {
-    background-color: #f5b5a1a3;
+    background-color: #f5b5a19f;
     border: 0.01rem solid #ffefe4;
     box-shadow: 3px 2px 2px #69141441;
     color: #ffefe4;
@@ -260,40 +257,41 @@ nav #homenav {
     position: relative;
 }
 
-/* SKILLS */
-#skills h2{
-    text-align: center;
-    margin-bottom: 7px;
-}
-
-#skills header p{
-    margin-top: 5px;
-    text-align: center;
-    color: #A1CCD1;
-}
-
-#skills h3 {
+/* SKILLS AND PORTFOLIO */
+#skills-portfolio {
     text-align: left;
-    margin: 0 -9em 0.5em -9em;
+    display: flex;
+}
+
+#skills h2{
+    text-align: left;
+    margin: 0 0 2em 3em;
 }
 
 #skills p{
-    margin-top: 5px;
+    margin-top: 10px;
+    color: #A1CCD1;
     text-align: left;
-    margin: auto -10em;
-    padding: 1rem;
     color: #A1CCD1;
     border-bottom: 5px solid #b0c09d;
 }
 
-#skills .skilllist{
-    margin-bottom: 3rem;
+#skills h3 {
+    text-align: left;
 }
 
-/* PORTFOLIO */
+.row .skillslist {
+    padding-bottom: 10em;
+}
+
+#skills {
+    margin: 0;
+}
+
 #portfolio h2{
-    text-align: center;
-    margin-bottom: 7px; 
+    text-align: left;
+    margin: 0 0 2em 0;
+
 }
 
 .project-container img{
@@ -302,6 +300,10 @@ nav #homenav {
     height: 250px;
     margin: 0;
     padding: 0;
+}
+
+#skills, #portfolio {
+    flex: 1;
 }
 
 /* WRAPPERS / CONTAINERS */
@@ -328,11 +330,6 @@ nav #homenav {
     padding: 3em 0;
 }
 
-.wrapper.style3 {
-    background-color: #fae4cf;
-    padding: 3em 0;
-}
-
 .wrapper.style4 {
     background-color: #7C9D96;
     padding: 3em 0 5em 0;
@@ -340,7 +337,6 @@ nav #homenav {
 }
 
 .container {
-    margin: 0 auto;
     max-width: calc(100% - 50px);
     width: 1200px;
 }
