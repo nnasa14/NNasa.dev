@@ -228,7 +228,7 @@ nav #homenav {
     margin-bottom: 1em;
     background: #ffffff30;
     padding: 10px;
-    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.15);
     margin: 0 0 1.5em 0;
     outline: 0;
 }
@@ -254,21 +254,22 @@ nav #homenav {
     text-align: left;
     display: flex;
     z-index: 1;
+    padding-bottom: 3em;
 }
 
 #skills-portfolio p{
     text-align: left;
     color: #6b967f;
-    border-bottom: 5px solid #8eab8b;
+    border-bottom: 3px solid #8eab8ba7;
     text-shadow: 0 1px 2px #1b3f28;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
     padding-bottom: 10px;
     display: inline-block;
 }
 
 #skills {
-    margin: 0;
+    margin: 2em 0 0 9em;
     z-index: 1;
 }
 
@@ -280,15 +281,16 @@ nav #homenav {
 
 #skills h3 {
     text-align: left;
-    margin: 0 70px;
+    margin: 0 150px;
 }
 
 #skills p{
-    margin: 10px 110px 20px 110px;
+    margin: 10px 200px 20px 160px;
 }
 
 #portfolio {
     z-index: 1;
+    margin: 2em 13em 0 5em;
 }
 
 #portfolio h2 {
@@ -298,12 +300,12 @@ nav #homenav {
 
 #portfolio h3 {
     text-align: left;
-    padding: 10px 0;
+    padding: 10px 50px;
     z-index: 2;
 }
 
 #portfolio p {
-    margin: 0 0 25px 35px;
+    margin: 0 120px 25px 90px;
 }
 
 #portfolio a{
@@ -317,8 +319,17 @@ nav #homenav {
     margin-bottom: 1em;
     background: #ffffff30;
     padding: 10px;
-    box-shadow: 2px 3px 3px 1px rgba(49, 84, 49, 0.267);
-    margin: 0 0 0.5em 18em;
+    box-shadow: 3px 3px 4px 2px rgba(50, 107, 50, 0.433);
+    margin: 0 0 0.5em 17em;
+}
+
+.project-container img:hover {
+    background-color: rgb(127, 171, 99);
+    opacity: 0.5;
+    background: #ffffff30;
+    width: 490px;
+    height: 260px;
+    transition: all 1s;
 }
 
 #skills-portfolio::before {
