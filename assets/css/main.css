@@ -130,9 +130,9 @@ a {
     z-index: 1000;
     text-transform: uppercase;
     cursor: default;
-    font-family: 'Chakra Petch', Courier, monospace;
+    font-family: 'Questrial', sans-serif;
     line-height: 2.5em;
-    background-color: #a66b3758;
+    background-color: #d5b599;
     box-shadow: 0px 2px 10px rgba(88, 48, 17);
     font-weight: bolder;
 }
@@ -163,8 +163,8 @@ nav #homenav {
     text-decoration: none;
     border-bottom: none;
     position: relative;
-    font-size: 24px;
-    margin-top: 9px;
+    font-size: larger;
+    padding-top: 8px;
 }
 
 .icon.brands {
@@ -276,7 +276,7 @@ nav #homenav {
     text-align: left;
     display: flex;
     z-index: 1;
-    padding-bottom: 3em;
+    padding-bottom: 2.25em;
 }
 
 #skills-portfolio h2{
@@ -304,9 +304,11 @@ nav #homenav {
 #skills {
     margin: 2em 0 0 4em;
     z-index: 1;
-    border-right: 3px solid #1b3f2848;
+    border-right: 3px solid #1b3f2824;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+    background-color: #f5fff99d;
+    box-shadow: 0 3px 4px rgba(50, 107, 50, 0.433);
 }
 
 #skills h2 {
@@ -326,6 +328,9 @@ nav #homenav {
 #portfolio {
     z-index: 1;
     margin: 2em 5em 0 0;
+    background-color: #f5fff99d;
+    box-shadow: 0 3px 4px rgba(50, 107, 50, 0.433);
+    padding-bottom: 1em;
 }
 
 #portfolio h2 {
@@ -340,7 +345,7 @@ nav #homenav {
 }
 
 #portfolio p {
-    margin: 0 110px 25px 130px;
+    margin: 0 110px 35px 130px;
 }
 
 #portfolio a{
@@ -383,6 +388,12 @@ nav #homenav {
 
 #skills, #portfolio {
     flex: 1;
+}
+
+/* FOOTER */
+
+#contact {
+    padding: 10em;
 }
 
 /* WRAPPERS / CONTAINERS */
