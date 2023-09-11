@@ -393,7 +393,21 @@ nav #homenav {
 /* FOOTER */
 
 #contact {
-    padding: 10em;
+    padding: 3em 0 5em 0;
+    align-items: center;
+    text-align: left;
+}
+
+form ul.actions {
+    margin-top: 0;
+}
+
+ul.actions {
+    list-style: none;
+    padding-left: 0;
+    margin: 3em 0 0 0;
+    font: inherit;
+    display: block;
 }
 
 /* WRAPPERS / CONTAINERS */
@@ -418,10 +432,8 @@ nav #homenav {
     background-color: #e6f1e4;
 }
 
-.wrapper.style4 {
+.wrapper.style3 {
     background-color: #7C9D96;
-    padding: 3em 0 5em 0;
-    align-items: center;
 }
 
 .container {
