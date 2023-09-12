@@ -410,12 +410,12 @@ nav #homenav {
 
 #contact {
     padding: 3em 0 5em 0;
-    display: flex;
 }
 
 #contact .container {
     max-width: calc(100% - 50px);
     width: 1200px;
+    margin: 0 auto;
 }
 
 #contact header {
@@ -424,19 +424,11 @@ nav #homenav {
 }
 
 #message-container {
-    display: inline-flex;
-    flex: 1;
-    text-align: center;
-    padding: 0 calc((100vh - 135) / 2);
-}
-
-form {
-    display: block;
+    display: inline;
 }
 
 #feature-list {
     display: flex;
-    flex: 1;
 }
 
 /* WRAPPERS / CONTAINERS */
@@ -481,4 +473,14 @@ form {
 
 .row > .col-8 {
     width: 66.66667%;
+}
+
+.row > .col-6 {
+    width: 50%;
+}
+
+@media screen and (max-width: 1680px){
+    .row > * {
+        padding: 25px 0 0 25px;
+    }
 }
