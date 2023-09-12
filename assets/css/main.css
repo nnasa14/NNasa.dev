@@ -159,6 +159,11 @@ nav #homenav {
     margin: 0 auto;
 }
 
+#nav .container {
+    max-width: calc(100% - 50px);
+    width: 1200px;
+}
+
 .icon {
     text-decoration: none;
     border-bottom: none;
@@ -213,6 +218,11 @@ nav #homenav {
     letter-spacing: 0.5px;
     background-color: #fff1e437;
     box-shadow: 3px 3px 3px 1px rgba(128, 128, 128, 0.1);
+}
+
+#home .container {
+    max-width: calc(100% - 50px);
+    width: 1200px;
 }
 
 .button {
@@ -301,6 +311,11 @@ nav #homenav {
     font-size: 22px;
 }
 
+#skills-portfolio .container {
+    max-width: calc(100% - 50px);
+    width: 1200px;
+}
+
 #skills {
     margin: 2em 0 0 4em;
     z-index: 1;
@@ -331,6 +346,7 @@ nav #homenav {
     background-color: #f5fff99d;
     box-shadow: 0 3px 4px rgba(50, 107, 50, 0.433);
     padding-bottom: 1em;
+    padding-right: 3.5em;
 }
 
 #portfolio h2 {
@@ -394,20 +410,33 @@ nav #homenav {
 
 #contact {
     padding: 3em 0 5em 0;
-    align-items: center;
-    text-align: left;
+    display: flex;
 }
 
-form ul.actions {
-    margin-top: 0;
+#contact .container {
+    max-width: calc(100% - 50px);
+    width: 1200px;
 }
 
-ul.actions {
-    list-style: none;
-    padding-left: 0;
-    margin: 3em 0 0 0;
-    font: inherit;
+#contact header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+#message-container {
+    display: inline-flex;
+    flex: 1;
+    text-align: center;
+    padding: 0 calc((100vh - 135) / 2);
+}
+
+form {
     display: block;
+}
+
+#feature-list {
+    display: flex;
+    flex: 1;
 }
 
 /* WRAPPERS / CONTAINERS */
@@ -434,11 +463,6 @@ ul.actions {
 
 .wrapper.style3 {
     background-color: #7C9D96;
-}
-
-.container {
-    max-width: calc(100% - 50px);
-    width: 1200px;
 }
 
 /* COLS */
