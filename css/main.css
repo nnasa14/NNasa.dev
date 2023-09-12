@@ -427,6 +427,53 @@ nav #homenav {
     display: inline;
 }
 
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 20px;
+    background-color: #e6eae5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    font-size: 16px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    border: 2px solid #0000003a;
+    border-radius: 1px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #1b3f28;
+    text-shadow: 1px 1px 0px #a19c9c;
+    width: 10em;
+    height: 2em;
+}
+
+input[type="submit"]:hover{
+    background-color: #c3e0c2a3;
+    border: 2px solid #0000003a;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
 #feature-list {
     display: flex;
 }
