@@ -484,6 +484,15 @@ input[type="submit"]:hover{
 
 #feature-list {
     display: flex;
+    background-color: #bed4cd;
+    padding: 2em 0;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.406);
+}
+
+#feature-list section {
+    border-bottom: 2px solid #657e76;
+    padding-bottom: 2px;
 }
 
 /* WRAPPERS / CONTAINERS */
