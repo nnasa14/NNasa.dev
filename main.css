@@ -443,6 +443,14 @@ label {
     font-weight: bold;
 }
 
+.col-6 input {
+    background-color: #ebfaf2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 2em;
+    width: 90%;
+}
+
 textarea {
     width: 90%;
     padding: 10px;
