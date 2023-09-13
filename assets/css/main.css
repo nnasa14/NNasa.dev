@@ -292,6 +292,7 @@ nav #homenav {
 #skills-portfolio h2{
     color: #194d2c;
     font-size: 26px;
+    text-align: center;
 }
 
 #skills-portfolio p{
@@ -324,11 +325,11 @@ nav #homenav {
     border-bottom-right-radius: 2px;
     background-color: #f5fff99d;
     box-shadow: 0 3px 4px rgba(50, 107, 50, 0.433);
+    padding-right: 5em;
 }
 
 #skills h2 {
-    text-align: left;
-    padding: 2em 0 2.5em 17em; 
+    padding: 2em 0 2.5em 0; 
     z-index: 2;
 }
 
@@ -350,8 +351,7 @@ nav #homenav {
 }
 
 #portfolio h2 {
-    text-align: left;
-    padding: 2em 0 65px 21em;
+    padding: 2em 0 65px 0;
 }
 
 #portfolio h3 {
@@ -376,7 +376,7 @@ nav #homenav {
     background: #ffffff30;
     padding: 10px;
     box-shadow: 3px 3px 4px 2px rgba(50, 107, 50, 0.433);
-    margin: 0 0 0.5em 22em;
+    margin: 0 0 0.5em 7em;
 }
 
 .project-container img:hover {
