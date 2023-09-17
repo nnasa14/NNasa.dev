@@ -2,13 +2,15 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, 
 p, a, ul, li, form, label, article, footer, header, nav {
     vertical-align: baseline;
+    font-family: "Exo 2", sans-serif;
 }
+
 
 body {
     -webkit-text-size-adjust: none;
     height: 100vh;
     width: 100vw;
-    font-family: "Exo 2", sans-serif;
+
 }
 
 h1 {
@@ -78,7 +80,7 @@ a {
 }
 
 /* NAV */
-#nav li::before {
+.custom-navbar li::before {
     content: "";
     position: absolute;
     height: 33.33%;
@@ -90,7 +92,7 @@ a {
     transition: all 0.5s;
 }
 
-#nav li:after {
+.custom-navbar li:after {
     content: "";
     position: absolute;
     height: 33.33%;
@@ -102,14 +104,14 @@ a {
     transition: all 0.5s;
 }
 
-#nav li:hover::before,
-#nav li:hover:after,
-#nav li:hover a:before{
+.custom-navbar li:hover::before,
+.custom-navbar li:hover:after,
+.custom-navbar li:hover a:before{
     width: 100%;
     z-index: -1;
 }
 
-#nav a::before {
+.custom-navbar a::before {
     position: absolute;
     content: "";
     height: 33.33%;
@@ -121,7 +123,7 @@ a {
     z-index: 0;
 }
 
-#nav {
+.custom-navbar {
     position: absolute;
     display: block;
     text-align: center;
@@ -137,7 +139,7 @@ a {
     font-weight: bolder;
 }
 
-#nav li{
+.custom-navbar li{
     display: inline-block;
     padding: 0 1.5em 0 1.5em;
     white-space: nowrap;
@@ -150,16 +152,16 @@ nav #homenav {
     letter-spacing: 0.090em;
 }
 
-#nav a {
+.custom-navbar a {
     color: #434b4a;
     text-shadow: 3px 2px 2px rgb(170, 131, 103);
 }
 
-#nav .container {
+.custom-navbar .container {
     margin: 0 auto;
 }
 
-#nav .container {
+.custom-navbar .container {
     max-width: calc(100% - 50px);
     width: 1200px;
 }
@@ -203,7 +205,7 @@ nav #homenav {
     background: url(../images/paper-1074131.JPG) no-repeat;
     background-size: cover;
     opacity: 0.4;
-    z-index: 0;
+    z-index: -1;
   }
 
 #home p {
@@ -265,13 +267,7 @@ nav #homenav {
     outline: 0;
 }
 
-.div {
-    display: block;
-}
 
-.row > .col-4 {
-    width: 33%;
-}
 
 #profile {
     width: 200px;
@@ -279,6 +275,9 @@ nav #homenav {
     display: inline;
     position: relative;
 }
+
+
+
 
 /* SKILLS AND PORTFOLIO */
 #skills-portfolio {
@@ -291,6 +290,7 @@ nav #homenav {
 
 #skills-portfolio h2{
     color: #194d2c;
+    font-weight: bolder;
     font-size: 26px;
     text-align: center;
 }
@@ -309,6 +309,7 @@ nav #homenav {
 
 #skills-portfolio h3 {
     text-align: left;
+    font-weight: bold;
     font-size: 22px;
 }
 
@@ -355,13 +356,14 @@ nav #homenav {
 }
 
 #portfolio h3 {
-    padding: 10px 120px;
-    margin-bottom: 10px;
+    text-align: center;
     z-index: 2;
+    margin: 20px;
 }
 
 #portfolio p {
-    margin: 0 110px 35px 130px;
+    text-align: center;
+    margin: 20px;
 }
 
 #portfolio a{
@@ -405,9 +407,52 @@ nav #homenav {
 #skills, #portfolio {
     flex: 1;
 }
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    #skills-portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills, #portfolio {
+        margin: 0; /* Remove margins for skills and portfolio sections */
+        padding: 1em; /* Add padding for spacing */
+        border-radius: 2px; /* Add border radius for style */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    #skills h3, #portfolio h3 {
+        margin: 20px; /* Remove margins for h3 elements */
+    }
+
+    #skills p, #portfolio p {
+        margin: 20px; /* Remove margins for p elements */
+    }
+
+    .project-container img {
+        width: 100%; /* Full width images */
+        margin: 0 auto; /* Center align images */
+    }
+
+    #skills-portfolio::before {
+        opacity: 0.1; /* Decrease background image opacity */
+    }
+}
+
+/* Media Query for Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    #skills-portfolio h2 {
+        font-size: 20px; /* Decrease font size for h2 on smaller screens */
+    }
+
+    #skills p, #portfolio p {
+        font-size: 14px; /* Decrease font size for p elements on smaller screens */
+    }
+}
 
 /* FOOTER */
 
+/* Base styles for non-responsive layout */
 #contact {
     padding: 3em 0 5em 0;
 }
@@ -429,13 +474,22 @@ nav #homenav {
     padding: 2em 0;
     border-radius: 5px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.406);
-    justify-content: center;
 }
 
-#feature-list section {
-    border-bottom: 2px solid #657e76;
-    padding-bottom: 2px;
+
+
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    #contact .container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0 1em; /* Add horizontal padding for spacing */
+    }
+
+    #feature-list {
+        flex-direction: column; /* Stack sections vertically */
+    }
 }
+
 
 /* WRAPPERS / CONTAINERS */
 .wrapper {
