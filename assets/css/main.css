@@ -158,12 +158,12 @@ nav #homenav {
 }
 
 .custom-navbar .container {
-    margin: 0 auto;
-}
-
-.custom-navbar .container {
     max-width: calc(100% - 50px);
     width: 1200px;
+}
+
+.navbar-nav {
+    margin: 0;
 }
 
 .icon {
