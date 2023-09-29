@@ -286,7 +286,6 @@ nav #homenav {
     text-align: left;
     display: flex;
     z-index: 1;
-    padding-bottom: 2.25em;
 }
 
 #skills-portfolio h2{
@@ -303,7 +302,6 @@ nav #homenav {
     text-shadow: 0 1px 2px #1b3f28;
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
-    padding-bottom: 10px;
     display: inline-block;
     font-size: 17.5px;
 }
@@ -314,20 +312,14 @@ nav #homenav {
     font-size: 22px;
 }
 
-#skills-portfolio .container {
-    max-width: calc(100% - 50px);
-    width: 1200px;
-}
-
 #skills {
-    margin: 2em 0 0 4em;
     z-index: 1;
     border-right: 3px solid #1b3f2824;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     background-color: #f5fff99d;
     box-shadow: 0 3px 4px rgba(50, 107, 50, 0.433);
-    padding-right: 5em;
+    padding-bottom: 14.45em;
 }
 
 #skills h2 {
@@ -345,11 +337,8 @@ nav #homenav {
 
 #portfolio {
     z-index: 1;
-    margin: 2em 5em 0 0;
     background-color: #f5fff99d;
     box-shadow: 0 3px 4px rgba(50, 107, 50, 0.433);
-    padding-bottom: 1em;
-    padding-right: 3.5em;
 }
 
 #portfolio h2 {
@@ -536,9 +525,6 @@ nav #homenav {
     width: 66.66667%;
 }
 
-.row > .col-6 {
-    width: 50%;
-}
 
 @media screen and (max-width: 1680px){
     .row > * {
